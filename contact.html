@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Wolves Pack Studios for filmmaking, videography and photography projects.">
+  <title>Contact | Wolves Pack Studios</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=League+Gothic&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="media/favicon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Wolves Pack Studios home"><img src="media/logo.png" alt="Wolves Pack Studios logo"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation">☰</button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="real-estate.html">Real Estate</a>
+        <a href="weddings.html">Weddings</a>
+        <a href="cinematography.html">Cinematography</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container fade-in">
+        <p class="eyebrow">04 · Contact</p>
+        <h1>Tell me what you're making.</h1>
+        <p>Give me a few details about the project, location and what you need filmed. I’ll get back to you with the next steps.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container contact-grid">
+        <aside class="contact-card fade-in">
+          <p class="eyebrow">Direct contact</p>
+          <h2>Let's talk.</h2>
+          <p>For enquiries, collaborations and filming work, you can contact Wolves Pack Studios directly.</p>
+
+          <div class="contact-links">
+            <!-- EDIT these values -->
+            <a href="mailto:wolvespackstudio@gmail.com">wolvespackstudio@gmail.com</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </aside>
+
+        <div class="contact-card fade-in">
+          <p class="eyebrow">Project enquiry</p>
+          <!-- EDIT: Replace YOUR_FORM_ID with the Formspree ID from your account. -->
+          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                <input type="hidden" name="_subject" value="New Wolves Pack Studios enquiry">
+              </div>
+              <div class="form-field full">
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                  <option>Real estate</option>
+                  <option>Wedding</option>
+                  <option>Cinematography</option>
+                  <option>Other project</option>
+                </select>
+              </div>
+              <div class="form-field full">
+                <label for="message">Project details</label>
+                <textarea id="message" name="message" placeholder="Tell me what you're planning, where it is, and when you need it."></textarea>
+              </div>
+              <div class="form-field full">
+                <button class="btn btn-primary" type="submit">Send enquiry</button>
+
+              </div>
+            </div>
+          </form>
+          <p class="form-note">Form powered by Formspree. Replace <strong>YOUR_FORM_ID</strong> in the form action with your real Formspree ID before publishing.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">© 2026 Wolves Pack Studios · By Shyama</div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="real-estate.html">Real Estate</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
